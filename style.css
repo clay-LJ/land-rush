@@ -82,3 +82,6 @@ footer{margin-top:10px;font-size:9px}
 .rules-heading{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 20px;background:#191e25;border-bottom:1px solid var(--line)}
 .rules-heading h2{font-size:18px}.rules-content{padding:0 20px 20px;font-size:13px;line-height:1.75}.rules-content h3{margin:20px 0 7px;font-size:14px;color:var(--lime)}.rules-content p,.rules-content .hint{font-size:13px;color:#c3ccd8}.rules-heading button{min-height:42px}
 @media(max-width:650px){#rulesDialog{max-height:calc(100dvh - 24px)}.rules-heading{padding:12px 15px}.rules-content{padding:0 15px 15px}.setup textarea{height:190px}.results{height:650px}}
+/* Separate the last setup option from the primary action without growing the PC panel. */
+.setup .setting{margin-bottom:22px}
+@media(max-width:650px){.setup .setting{margin-bottom:18px}}

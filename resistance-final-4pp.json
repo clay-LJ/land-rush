@@ -1,0 +1,1202 @@
+{
+  "note": "Equal seeds start identically, but combat outcomes alter later RNG consumption. Observational comparison, not a guaranteed causal comeback rate. Simulated time excludes sprint modal and browser render overhead.",
+  "runs": [
+    {
+      "n": 2,
+      "version": "last-stand-4pp",
+      "games": 6,
+      "openingLeaderWins": 6,
+      "leaderChanges": 0,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "1": 2,
+        "10": 4
+      },
+      "seconds1x": {
+        "mean": 66.93181818181819,
+        "min": 43.18181818181818,
+        "max": 102.95454545454547
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 80.45454545454545
+        },
+        {
+          "seed": 2,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 69.54545454545455
+        },
+        {
+          "seed": 3,
+          "winnerId": 0,
+          "winnerInitialWeight": 1,
+          "openingLeader": 0,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 43.18181818181818
+        },
+        {
+          "seed": 4,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 102.95454545454547
+        },
+        {
+          "seed": 5,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 61.59090909090909
+        },
+        {
+          "seed": 6,
+          "winnerId": 0,
+          "winnerInitialWeight": 1,
+          "openingLeader": 0,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 43.86363636363637
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "version": "last-stand-4pp",
+      "games": 20,
+      "openingLeaderWins": 5,
+      "leaderChanges": 47,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "6": 3,
+        "7": 3,
+        "8": 4,
+        "9": 3,
+        "10": 4
+      },
+      "seconds1x": {
+        "mean": 106.70454545454547,
+        "min": 79.0909090909091,
+        "max": 135.6818181818182
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 17,
+          "winnerInitialWeight": 8,
+          "openingLeader": 4,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 87.04545454545456
+        },
+        {
+          "seed": 2,
+          "winnerId": 7,
+          "winnerInitialWeight": 8,
+          "openingLeader": 7,
+          "openingLeaderWon": true,
+          "leadChanges": 2,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 118.63636363636364
+        },
+        {
+          "seed": 3,
+          "winnerId": 18,
+          "winnerInitialWeight": 9,
+          "openingLeader": 15,
+          "openingLeaderWon": false,
+          "leadChanges": 3,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 92.72727272727273
+        },
+        {
+          "seed": 4,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 6,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 93.86363636363637
+        },
+        {
+          "seed": 5,
+          "winnerId": 5,
+          "winnerInitialWeight": 6,
+          "openingLeader": 18,
+          "openingLeaderWon": false,
+          "leadChanges": 3,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 117.27272727272728
+        },
+        {
+          "seed": 6,
+          "winnerId": 18,
+          "winnerInitialWeight": 9,
+          "openingLeader": 4,
+          "openingLeaderWon": false,
+          "leadChanges": 5,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 107.95454545454545
+        },
+        {
+          "seed": 7,
+          "winnerId": 15,
+          "winnerInitialWeight": 6,
+          "openingLeader": 5,
+          "openingLeaderWon": false,
+          "leadChanges": 5,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 110.22727272727273
+        },
+        {
+          "seed": 8,
+          "winnerId": 2,
+          "winnerInitialWeight": 3,
+          "openingLeader": 6,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 106.59090909090911
+        },
+        {
+          "seed": 9,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 9,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 114.31818181818183
+        },
+        {
+          "seed": 10,
+          "winnerId": 18,
+          "winnerInitialWeight": 9,
+          "openingLeader": 8,
+          "openingLeaderWon": false,
+          "leadChanges": 3,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 79.0909090909091
+        },
+        {
+          "seed": 11,
+          "winnerId": 17,
+          "winnerInitialWeight": 8,
+          "openingLeader": 19,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 135.6818181818182
+        },
+        {
+          "seed": 12,
+          "winnerId": 3,
+          "winnerInitialWeight": 4,
+          "openingLeader": 12,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 134.0909090909091
+        },
+        {
+          "seed": 13,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 9,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 110.90909090909092
+        },
+        {
+          "seed": 14,
+          "winnerId": 19,
+          "winnerInitialWeight": 10,
+          "openingLeader": 15,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 110.22727272727273
+        },
+        {
+          "seed": 15,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 3,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 105.9090909090909
+        },
+        {
+          "seed": 16,
+          "winnerId": 19,
+          "winnerInitialWeight": 10,
+          "openingLeader": 19,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 109.54545454545455
+        },
+        {
+          "seed": 17,
+          "winnerId": 10,
+          "winnerInitialWeight": 1,
+          "openingLeader": 14,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 112.5
+        },
+        {
+          "seed": 18,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 19,
+          "openingLeaderWon": false,
+          "leadChanges": 4,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 108.40909090909092
+        },
+        {
+          "seed": 19,
+          "winnerId": 5,
+          "winnerInitialWeight": 6,
+          "openingLeader": 8,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 94.54545454545455
+        },
+        {
+          "seed": 20,
+          "winnerId": 17,
+          "winnerInitialWeight": 8,
+          "openingLeader": 17,
+          "openingLeaderWon": true,
+          "leadChanges": 6,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 84.54545454545455
+        }
+      ]
+    },
+    {
+      "n": 100,
+      "version": "last-stand-4pp",
+      "games": 6,
+      "openingLeaderWins": 0,
+      "leaderChanges": 50,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "5": 2,
+        "9": 1,
+        "10": 3
+      },
+      "seconds1x": {
+        "mean": 202.61363636363637,
+        "min": 138.1818181818182,
+        "max": 238.18181818181822
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 39,
+          "winnerInitialWeight": 10,
+          "openingLeader": 65,
+          "openingLeaderWon": false,
+          "leadChanges": 19,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 210.22727272727272
+        },
+        {
+          "seed": 2,
+          "winnerId": 54,
+          "winnerInitialWeight": 5,
+          "openingLeader": 33,
+          "openingLeaderWon": false,
+          "leadChanges": 2,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 238.18181818181822
+        },
+        {
+          "seed": 3,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 37,
+          "openingLeaderWon": false,
+          "leadChanges": 5,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 138.1818181818182
+        },
+        {
+          "seed": 4,
+          "winnerId": 68,
+          "winnerInitialWeight": 9,
+          "openingLeader": 57,
+          "openingLeaderWon": false,
+          "leadChanges": 4,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 234.0909090909091
+        },
+        {
+          "seed": 5,
+          "winnerId": 24,
+          "winnerInitialWeight": 5,
+          "openingLeader": 98,
+          "openingLeaderWon": false,
+          "leadChanges": 7,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 201.81818181818184
+        },
+        {
+          "seed": 6,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 68,
+          "openingLeaderWon": false,
+          "leadChanges": 13,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 193.1818181818182
+        }
+      ]
+    },
+    {
+      "n": 300,
+      "version": "last-stand-4pp",
+      "games": 6,
+      "openingLeaderWins": 0,
+      "leaderChanges": 61,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "3": 1,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "10": 1
+      },
+      "seconds1x": {
+        "mean": 469.84848484848493,
+        "min": 310,
+        "max": 693.8636363636364
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 298,
+          "winnerInitialWeight": 9,
+          "openingLeader": 37,
+          "openingLeaderWon": false,
+          "leadChanges": 13,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 678.6363636363637
+        },
+        {
+          "seed": 2,
+          "winnerId": 227,
+          "winnerInitialWeight": 8,
+          "openingLeader": 207,
+          "openingLeaderWon": false,
+          "leadChanges": 12,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 693.8636363636364
+        },
+        {
+          "seed": 3,
+          "winnerId": 199,
+          "winnerInitialWeight": 10,
+          "openingLeader": 189,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 440.22727272727275
+        },
+        {
+          "seed": 4,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 196,
+          "openingLeaderWon": false,
+          "leadChanges": 11,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 333.6363636363637
+        },
+        {
+          "seed": 5,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 268,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 310
+        },
+        {
+          "seed": 6,
+          "winnerId": 162,
+          "winnerInitialWeight": 3,
+          "openingLeader": 289,
+          "openingLeaderWon": false,
+          "leadChanges": 16,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 362.7272727272728
+        }
+      ]
+    },
+    {
+      "n": 500,
+      "version": "last-stand-4pp",
+      "games": 6,
+      "openingLeaderWins": 0,
+      "leaderChanges": 149,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "3": 1,
+        "4": 1,
+        "9": 2,
+        "10": 2
+      },
+      "seconds1x": {
+        "mean": 587.6515151515151,
+        "min": 457.5,
+        "max": 938.1818181818182
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 28,
+          "winnerInitialWeight": 9,
+          "openingLeader": 189,
+          "openingLeaderWon": false,
+          "leadChanges": 28,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 938.1818181818182
+        },
+        {
+          "seed": 2,
+          "winnerId": 329,
+          "winnerInitialWeight": 10,
+          "openingLeader": 377,
+          "openingLeaderWon": false,
+          "leadChanges": 9,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 470.45454545454544
+        },
+        {
+          "seed": 3,
+          "winnerId": 318,
+          "winnerInitialWeight": 9,
+          "openingLeader": 149,
+          "openingLeaderWon": false,
+          "leadChanges": 37,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 457.5
+        },
+        {
+          "seed": 4,
+          "winnerId": 499,
+          "winnerInitialWeight": 10,
+          "openingLeader": 376,
+          "openingLeaderWon": false,
+          "leadChanges": 27,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 653.1818181818182
+        },
+        {
+          "seed": 5,
+          "winnerId": 112,
+          "winnerInitialWeight": 3,
+          "openingLeader": 118,
+          "openingLeaderWon": false,
+          "leadChanges": 33,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 482.95454545454544
+        },
+        {
+          "seed": 6,
+          "winnerId": 453,
+          "winnerInitialWeight": 4,
+          "openingLeader": 366,
+          "openingLeaderWon": false,
+          "leadChanges": 15,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 523.6363636363636
+        }
+      ]
+    }
+  ],
+  "baseline": [
+    {
+      "n": 2,
+      "version": "v1.2",
+      "games": 6,
+      "openingLeaderWins": 6,
+      "leaderChanges": 0,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "1": 2,
+        "10": 4
+      },
+      "seconds1x": {
+        "mean": 64.62121212121212,
+        "min": 39.54545454545455,
+        "max": 101.13636363636364
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 75.45454545454547
+        },
+        {
+          "seed": 2,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 70
+        },
+        {
+          "seed": 3,
+          "winnerId": 0,
+          "winnerInitialWeight": 1,
+          "openingLeader": 0,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 39.54545454545455
+        },
+        {
+          "seed": 4,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 101.13636363636364
+        },
+        {
+          "seed": 5,
+          "winnerId": 1,
+          "winnerInitialWeight": 10,
+          "openingLeader": 1,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 56.81818181818182
+        },
+        {
+          "seed": 6,
+          "winnerId": 0,
+          "winnerInitialWeight": 1,
+          "openingLeader": 0,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 44.77272727272728
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "version": "v1.2",
+      "games": 20,
+      "openingLeaderWins": 7,
+      "leaderChanges": 62,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "1": 1,
+        "4": 2,
+        "5": 2,
+        "6": 3,
+        "7": 3,
+        "8": 3,
+        "9": 2,
+        "10": 4
+      },
+      "seconds1x": {
+        "mean": 105.51136363636365,
+        "min": 83.63636363636364,
+        "max": 127.5
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 4,
+          "winnerInitialWeight": 5,
+          "openingLeader": 4,
+          "openingLeaderWon": true,
+          "leadChanges": 4,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 120.68181818181819
+        },
+        {
+          "seed": 2,
+          "winnerId": 7,
+          "winnerInitialWeight": 8,
+          "openingLeader": 7,
+          "openingLeaderWon": true,
+          "leadChanges": 10,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 110.90909090909092
+        },
+        {
+          "seed": 3,
+          "winnerId": 18,
+          "winnerInitialWeight": 9,
+          "openingLeader": 15,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 83.63636363636364
+        },
+        {
+          "seed": 4,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 6,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 89.0909090909091
+        },
+        {
+          "seed": 5,
+          "winnerId": 5,
+          "winnerInitialWeight": 6,
+          "openingLeader": 18,
+          "openingLeaderWon": false,
+          "leadChanges": 4,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 120.22727272727273
+        },
+        {
+          "seed": 6,
+          "winnerId": 4,
+          "winnerInitialWeight": 5,
+          "openingLeader": 4,
+          "openingLeaderWon": true,
+          "leadChanges": 2,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 92.5
+        },
+        {
+          "seed": 7,
+          "winnerId": 15,
+          "winnerInitialWeight": 6,
+          "openingLeader": 5,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 118.63636363636364
+        },
+        {
+          "seed": 8,
+          "winnerId": 3,
+          "winnerInitialWeight": 4,
+          "openingLeader": 6,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 114.54545454545456
+        },
+        {
+          "seed": 9,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 9,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 113.40909090909092
+        },
+        {
+          "seed": 10,
+          "winnerId": 18,
+          "winnerInitialWeight": 9,
+          "openingLeader": 8,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 84.31818181818183
+        },
+        {
+          "seed": 11,
+          "winnerId": 17,
+          "winnerInitialWeight": 8,
+          "openingLeader": 19,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 120.68181818181819
+        },
+        {
+          "seed": 12,
+          "winnerId": 3,
+          "winnerInitialWeight": 4,
+          "openingLeader": 12,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 121.81818181818183
+        },
+        {
+          "seed": 13,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 9,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 107.27272727272728
+        },
+        {
+          "seed": 14,
+          "winnerId": 19,
+          "winnerInitialWeight": 10,
+          "openingLeader": 15,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 105.9090909090909
+        },
+        {
+          "seed": 15,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 3,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 97.04545454545455
+        },
+        {
+          "seed": 16,
+          "winnerId": 19,
+          "winnerInitialWeight": 10,
+          "openingLeader": 19,
+          "openingLeaderWon": true,
+          "leadChanges": 0,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 91.5909090909091
+        },
+        {
+          "seed": 17,
+          "winnerId": 10,
+          "winnerInitialWeight": 1,
+          "openingLeader": 14,
+          "openingLeaderWon": false,
+          "leadChanges": 1,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 93.63636363636364
+        },
+        {
+          "seed": 18,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 19,
+          "openingLeaderWon": false,
+          "leadChanges": 5,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 127.5
+        },
+        {
+          "seed": 19,
+          "winnerId": 5,
+          "winnerInitialWeight": 6,
+          "openingLeader": 8,
+          "openingLeaderWon": false,
+          "leadChanges": 7,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 98.40909090909092
+        },
+        {
+          "seed": 20,
+          "winnerId": 17,
+          "winnerInitialWeight": 8,
+          "openingLeader": 17,
+          "openingLeaderWon": true,
+          "leadChanges": 6,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 98.40909090909092
+        }
+      ]
+    },
+    {
+      "n": 100,
+      "version": "v1.2",
+      "games": 6,
+      "openingLeaderWins": 0,
+      "leaderChanges": 63,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "5": 1,
+        "7": 1,
+        "9": 1,
+        "10": 3
+      },
+      "seconds1x": {
+        "mean": 184.0909090909091,
+        "min": 143.1818181818182,
+        "max": 231.3636363636364
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 39,
+          "winnerInitialWeight": 10,
+          "openingLeader": 65,
+          "openingLeaderWon": false,
+          "leadChanges": 16,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 231.3636363636364
+        },
+        {
+          "seed": 2,
+          "winnerId": 54,
+          "winnerInitialWeight": 5,
+          "openingLeader": 33,
+          "openingLeaderWon": false,
+          "leadChanges": 9,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 183.1818181818182
+        },
+        {
+          "seed": 3,
+          "winnerId": 9,
+          "winnerInitialWeight": 10,
+          "openingLeader": 37,
+          "openingLeaderWon": false,
+          "leadChanges": 13,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 143.1818181818182
+        },
+        {
+          "seed": 4,
+          "winnerId": 26,
+          "winnerInitialWeight": 7,
+          "openingLeader": 57,
+          "openingLeaderWon": false,
+          "leadChanges": 7,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 199.54545454545456
+        },
+        {
+          "seed": 5,
+          "winnerId": 49,
+          "winnerInitialWeight": 10,
+          "openingLeader": 98,
+          "openingLeaderWon": false,
+          "leadChanges": 12,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 192.95454545454547
+        },
+        {
+          "seed": 6,
+          "winnerId": 78,
+          "winnerInitialWeight": 9,
+          "openingLeader": 68,
+          "openingLeaderWon": false,
+          "leadChanges": 6,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 154.31818181818184
+        }
+      ]
+    },
+    {
+      "n": 300,
+      "version": "v1.2",
+      "games": 6,
+      "openingLeaderWins": 1,
+      "leaderChanges": 49,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "6": 1,
+        "7": 1,
+        "9": 3,
+        "10": 1
+      },
+      "seconds1x": {
+        "mean": 318.7878787878788,
+        "min": 236.8181818181818,
+        "max": 500.90909090909093
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 248,
+          "winnerInitialWeight": 9,
+          "openingLeader": 37,
+          "openingLeaderWon": false,
+          "leadChanges": 3,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 268.6363636363636
+        },
+        {
+          "seed": 2,
+          "winnerId": 185,
+          "winnerInitialWeight": 6,
+          "openingLeader": 207,
+          "openingLeaderWon": false,
+          "leadChanges": 2,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 326.3636363636364
+        },
+        {
+          "seed": 3,
+          "winnerId": 298,
+          "winnerInitialWeight": 9,
+          "openingLeader": 189,
+          "openingLeaderWon": false,
+          "leadChanges": 15,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 236.8181818181818
+        },
+        {
+          "seed": 4,
+          "winnerId": 6,
+          "winnerInitialWeight": 7,
+          "openingLeader": 196,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 500.90909090909093
+        },
+        {
+          "seed": 5,
+          "winnerId": 148,
+          "winnerInitialWeight": 9,
+          "openingLeader": 268,
+          "openingLeaderWon": false,
+          "leadChanges": 11,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 340
+        },
+        {
+          "seed": 6,
+          "winnerId": 289,
+          "winnerInitialWeight": 10,
+          "openingLeader": 289,
+          "openingLeaderWon": true,
+          "leadChanges": 10,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 240.00000000000003
+        }
+      ]
+    },
+    {
+      "n": 500,
+      "version": "v1.2",
+      "games": 6,
+      "openingLeaderWins": 0,
+      "leaderChanges": 115,
+      "quarterLeaderRecoveryGames": 0,
+      "quarterLeaderWinnerGames": 0,
+      "winnerWeights": {
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "9": 2,
+        "10": 1
+      },
+      "seconds1x": {
+        "mean": 523.8636363636364,
+        "min": 389.31818181818187,
+        "max": 752.0454545454546
+      },
+      "rows": [
+        {
+          "seed": 1,
+          "winnerId": 348,
+          "winnerInitialWeight": 9,
+          "openingLeader": 189,
+          "openingLeaderWon": false,
+          "leadChanges": 35,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 639.090909090909
+        },
+        {
+          "seed": 2,
+          "winnerId": 149,
+          "winnerInitialWeight": 10,
+          "openingLeader": 377,
+          "openingLeaderWon": false,
+          "leadChanges": 14,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 473.6363636363636
+        },
+        {
+          "seed": 3,
+          "winnerId": 355,
+          "winnerInitialWeight": 6,
+          "openingLeader": 149,
+          "openingLeaderWon": false,
+          "leadChanges": 34,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 752.0454545454546
+        },
+        {
+          "seed": 4,
+          "winnerId": 358,
+          "winnerInitialWeight": 9,
+          "openingLeader": 376,
+          "openingLeaderWon": false,
+          "leadChanges": 11,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 463.1818181818182
+        },
+        {
+          "seed": 5,
+          "winnerId": 317,
+          "winnerInitialWeight": 8,
+          "openingLeader": 118,
+          "openingLeaderWon": false,
+          "leadChanges": 13,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 425.90909090909093
+        },
+        {
+          "seed": 6,
+          "winnerId": 453,
+          "winnerInitialWeight": 4,
+          "openingLeader": 366,
+          "openingLeaderWon": false,
+          "leadChanges": 8,
+          "everQuarterLeaderRecovered": false,
+          "winnerWasQuarterOfLeader": false,
+          "seconds1x": 389.31818181818187
+        }
+      ]
+    }
+  ],
+  "testedEngineBonusCap": 0.04,
+  "totalFinalGames": 44
+}
