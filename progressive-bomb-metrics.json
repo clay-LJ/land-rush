@@ -1,0 +1,362 @@
+[
+  {
+    "n": 20,
+    "strength": "light",
+    "progress": 0,
+    "largeMean": 1.6734567901234567,
+    "largeMax": 2.0500000000000003,
+    "clusterMean": 0.466820987654321,
+    "clusterMax": 0.9537037037037036,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 20,
+    "strength": "light",
+    "progress": 0.5,
+    "largeMean": 2.637129629629629,
+    "largeMax": 3.301851851851852,
+    "clusterMean": 1.1241049382716055,
+    "clusterMax": 1.9666666666666666,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 20,
+    "strength": "light",
+    "progress": 1,
+    "largeMean": 3.5679938271604943,
+    "largeMax": 4.555555555555555,
+    "clusterMean": 2.0177160493827153,
+    "clusterMax": 2.7333333333333334,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 20,
+    "strength": "normal",
+    "progress": 0,
+    "largeMean": 2.8506481481481476,
+    "largeMax": 3.587037037037037,
+    "clusterMean": 0.8131790123456792,
+    "clusterMax": 1.6759259259259258,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 20,
+    "strength": "normal",
+    "progress": 0.5,
+    "largeMean": 4.459320987654322,
+    "largeMax": 5.772222222222222,
+    "clusterMean": 1.9490123456790125,
+    "clusterMax": 3.409259259259259,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 20,
+    "strength": "normal",
+    "progress": 1,
+    "largeMean": 6.007746913580245,
+    "largeMax": 7.962962962962964,
+    "clusterMean": 3.4854629629629628,
+    "clusterMax": 4.788888888888889,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 20,
+    "strength": "strong",
+    "progress": 0,
+    "largeMean": 3.9848148148148144,
+    "largeMax": 5.125925925925926,
+    "clusterMean": 1.1563888888888885,
+    "clusterMax": 2.3685185185185182,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 20,
+    "strength": "strong",
+    "progress": 0.5,
+    "largeMean": 6.205092592592595,
+    "largeMax": 8.248148148148147,
+    "clusterMean": 2.7604629629629622,
+    "clusterMax": 4.781481481481482,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 20,
+    "strength": "strong",
+    "progress": 1,
+    "largeMean": 8.325308641975308,
+    "largeMax": 11.375925925925925,
+    "clusterMean": 4.91212962962963,
+    "clusterMax": 6.801851851851852,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 100,
+    "strength": "light",
+    "progress": 0,
+    "largeMean": 1.6734567901234567,
+    "largeMax": 2.0500000000000003,
+    "clusterMean": 0.466820987654321,
+    "clusterMax": 0.9537037037037036,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 100,
+    "strength": "light",
+    "progress": 0.5,
+    "largeMean": 2.637129629629629,
+    "largeMax": 3.301851851851852,
+    "clusterMean": 1.1241049382716055,
+    "clusterMax": 1.9666666666666666,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 100,
+    "strength": "light",
+    "progress": 1,
+    "largeMean": 3.5679938271604943,
+    "largeMax": 4.555555555555555,
+    "clusterMean": 2.0177160493827153,
+    "clusterMax": 2.7333333333333334,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 100,
+    "strength": "normal",
+    "progress": 0,
+    "largeMean": 2.8506481481481476,
+    "largeMax": 3.587037037037037,
+    "clusterMean": 0.8131790123456792,
+    "clusterMax": 1.6759259259259258,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 100,
+    "strength": "normal",
+    "progress": 0.5,
+    "largeMean": 4.459320987654322,
+    "largeMax": 5.772222222222222,
+    "clusterMean": 1.9490123456790125,
+    "clusterMax": 3.409259259259259,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 100,
+    "strength": "normal",
+    "progress": 1,
+    "largeMean": 6.007746913580245,
+    "largeMax": 7.962962962962964,
+    "clusterMean": 3.4854629629629628,
+    "clusterMax": 4.788888888888889,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 100,
+    "strength": "strong",
+    "progress": 0,
+    "largeMean": 3.9848148148148144,
+    "largeMax": 5.125925925925926,
+    "clusterMean": 1.1563888888888885,
+    "clusterMax": 2.3685185185185182,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 100,
+    "strength": "strong",
+    "progress": 0.5,
+    "largeMean": 6.205092592592595,
+    "largeMax": 8.248148148148147,
+    "clusterMean": 2.7604629629629622,
+    "clusterMax": 4.781481481481482,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 100,
+    "strength": "strong",
+    "progress": 1,
+    "largeMean": 8.325308641975308,
+    "largeMax": 11.375925925925925,
+    "clusterMean": 4.91212962962963,
+    "clusterMax": 6.801851851851852,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 300,
+    "strength": "light",
+    "progress": 0,
+    "largeMean": 1.6734567901234567,
+    "largeMax": 2.0500000000000003,
+    "clusterMean": 0.466820987654321,
+    "clusterMax": 0.9537037037037036,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 300,
+    "strength": "light",
+    "progress": 0.5,
+    "largeMean": 2.637129629629629,
+    "largeMax": 3.301851851851852,
+    "clusterMean": 1.1241049382716055,
+    "clusterMax": 1.9666666666666666,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 300,
+    "strength": "light",
+    "progress": 1,
+    "largeMean": 3.5679938271604943,
+    "largeMax": 4.555555555555555,
+    "clusterMean": 2.0177160493827153,
+    "clusterMax": 2.7333333333333334,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 300,
+    "strength": "normal",
+    "progress": 0,
+    "largeMean": 2.8506481481481476,
+    "largeMax": 3.587037037037037,
+    "clusterMean": 0.8131790123456792,
+    "clusterMax": 1.6759259259259258,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 300,
+    "strength": "normal",
+    "progress": 0.5,
+    "largeMean": 4.459320987654322,
+    "largeMax": 5.772222222222222,
+    "clusterMean": 1.9490123456790125,
+    "clusterMax": 3.409259259259259,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 300,
+    "strength": "normal",
+    "progress": 1,
+    "largeMean": 6.007746913580245,
+    "largeMax": 7.962962962962964,
+    "clusterMean": 3.4854629629629628,
+    "clusterMax": 4.788888888888889,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 300,
+    "strength": "strong",
+    "progress": 0,
+    "largeMean": 3.9848148148148144,
+    "largeMax": 5.125925925925926,
+    "clusterMean": 1.1563888888888885,
+    "clusterMax": 2.3685185185185182,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 300,
+    "strength": "strong",
+    "progress": 0.5,
+    "largeMean": 6.205092592592595,
+    "largeMax": 8.248148148148147,
+    "clusterMean": 2.7604629629629622,
+    "clusterMax": 4.781481481481482,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 300,
+    "strength": "strong",
+    "progress": 1,
+    "largeMean": 8.325308641975308,
+    "largeMax": 11.375925925925925,
+    "clusterMean": 4.91212962962963,
+    "clusterMax": 6.801851851851852,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 500,
+    "strength": "light",
+    "progress": 0,
+    "largeMean": 1.6734567901234567,
+    "largeMax": 2.0500000000000003,
+    "clusterMean": 0.466820987654321,
+    "clusterMax": 0.9537037037037036,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 500,
+    "strength": "light",
+    "progress": 0.5,
+    "largeMean": 2.637129629629629,
+    "largeMax": 3.301851851851852,
+    "clusterMean": 1.1241049382716055,
+    "clusterMax": 1.9666666666666666,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 500,
+    "strength": "light",
+    "progress": 1,
+    "largeMean": 3.5679938271604943,
+    "largeMax": 4.555555555555555,
+    "clusterMean": 2.0177160493827153,
+    "clusterMax": 2.7333333333333334,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 500,
+    "strength": "normal",
+    "progress": 0,
+    "largeMean": 2.8506481481481476,
+    "largeMax": 3.587037037037037,
+    "clusterMean": 0.8131790123456792,
+    "clusterMax": 1.6759259259259258,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 500,
+    "strength": "normal",
+    "progress": 0.5,
+    "largeMean": 4.459320987654322,
+    "largeMax": 5.772222222222222,
+    "clusterMean": 1.9490123456790125,
+    "clusterMax": 3.409259259259259,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 500,
+    "strength": "normal",
+    "progress": 1,
+    "largeMean": 6.007746913580245,
+    "largeMax": 7.962962962962964,
+    "clusterMean": 3.4854629629629628,
+    "clusterMax": 4.788888888888889,
+    "meanStrikes": 5.2
+  },
+  {
+    "n": 500,
+    "strength": "strong",
+    "progress": 0,
+    "largeMean": 3.9848148148148144,
+    "largeMax": 5.125925925925926,
+    "clusterMean": 1.1563888888888885,
+    "clusterMax": 2.3685185185185182,
+    "meanStrikes": 2.6333333333333333
+  },
+  {
+    "n": 500,
+    "strength": "strong",
+    "progress": 0.5,
+    "largeMean": 6.205092592592595,
+    "largeMax": 8.248148148148147,
+    "clusterMean": 2.7604629629629622,
+    "clusterMax": 4.781481481481482,
+    "meanStrikes": 3.966666666666667
+  },
+  {
+    "n": 500,
+    "strength": "strong",
+    "progress": 1,
+    "largeMean": 8.325308641975308,
+    "largeMax": 11.375925925925925,
+    "clusterMean": 4.91212962962963,
+    "clusterMax": 6.801851851851852,
+    "meanStrikes": 5.2
+  }
+]
