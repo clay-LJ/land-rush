@@ -1,0 +1,2 @@
+const assert=require('assert'),{Territory}=require('./engine'),{lunchEntries,LUNCH_MENU}=require('./lunch');
+for(let seed=1;seed<=3;seed++){let state=seed;const rng=()=>((state=(1664525*state+1013904223)>>>0)/4294967296);const entries=lunchEntries(Object.keys(LUNCH_MENU)),g=new Territory(entries,'normal',rng);let ticks=0;while(!g.done&&ticks<50000){if(g.pending.length)g.resolve([...g.pending].sort(()=>0));g.tick(.05);ticks++;}assert(g.done);assert.equal(new Set(g.players.map(x=>x.rank)).size,252);console.log('252 menu full game seed',seed,'ticks',ticks);}

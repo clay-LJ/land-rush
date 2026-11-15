@@ -85,3 +85,9 @@ footer{margin-top:10px;font-size:9px}
 /* Separate the last setup option from the primary action without growing the PC panel. */
 .setup .setting{margin-bottom:22px}
 @media(max-width:650px){.setup .setting{margin-bottom:18px}}
+
+#lunchDialog{width:min(580px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;border:1px solid #4b5665;border-radius:14px;background:#191e25;color:#edf2f8;box-shadow:0 20px 70px #0009}#lunchDialog::backdrop{background:#050a13b8;backdrop-filter:blur(3px)}.lunch-content{padding:0 20px 20px;font-size:13px;line-height:1.65}.lunch-content>p{margin:16px 0}#lunchCategories{display:flex;flex-wrap:wrap;gap:8px;border:0;padding:0;margin:12px 0}#lunchCategories legend{margin-bottom:10px}#lunchCategories label{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;cursor:pointer}#lunchCategories input{width:18px;height:18px;accent-color:var(--lime)}#lunchPreview{max-height:180px;overflow:auto;padding:12px;border:1px solid var(--line);border-radius:8px;line-height:1.9}.lunch-warning{color:#e4bd82}.lunch-draft{color:#a9b3c2;font-size:11px}@media(max-width:650px){#lunchDialog{max-height:calc(100dvh - 24px)}.lunch-content{padding:0 15px 15px}}
+
+#lunchCategories{max-height:220px;overflow:auto}.lunch-selection{display:flex;gap:8px}.lunch-selection button{min-height:44px}#lunchError{color:#e4bd82}#lunchError:empty{display:none}
+
+#lunchConditions{white-space:pre-line;max-height:140px;overflow:auto;border-left:3px solid #e4bd82;padding:8px 12px;margin:12px 0;font-size:12px;line-height:1.8;color:#e4bd82}
