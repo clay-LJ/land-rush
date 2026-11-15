@@ -1,0 +1,92 @@
+[
+  {
+    "version": "v1.2",
+    "n": 20,
+    "games": 20,
+    "earlyLeaderWins": 7,
+    "bombWindows": 53,
+    "leaderChangedWithinWindow": 6,
+    "meanBombDamage": 1822.3207547169811,
+    "maxBombDamage": 4339,
+    "maxImmediateBombEliminations": 1,
+    "finishSeconds": [
+      83.63636363636364,
+      127.5
+    ]
+  },
+  {
+    "version": "v1.2",
+    "n": 500,
+    "games": 6,
+    "earlyLeaderWins": 0,
+    "bombWindows": 87,
+    "leaderChangedWithinWindow": 7,
+    "meanBombDamage": 3110.8390804597702,
+    "maxBombDamage": 5508,
+    "maxImmediateBombEliminations": 3,
+    "finishSeconds": [
+      395,
+      790.6818181818182
+    ]
+  },
+  {
+    "version": "large75",
+    "n": 20,
+    "games": 20,
+    "earlyLeaderWins": 6,
+    "bombWindows": 53,
+    "leaderChangedWithinWindow": 7,
+    "meanBombDamage": 2008.867924528302,
+    "maxBombDamage": 5661,
+    "maxImmediateBombEliminations": 1,
+    "finishSeconds": [
+      83.63636363636364,
+      127.5
+    ]
+  },
+  {
+    "version": "large75",
+    "n": 500,
+    "games": 6,
+    "earlyLeaderWins": 1,
+    "bombWindows": 87,
+    "leaderChangedWithinWindow": 12,
+    "meanBombDamage": 2831.310344827586,
+    "maxBombDamage": 5416,
+    "maxImmediateBombEliminations": 3,
+    "finishSeconds": [
+      363.1818181818182,
+      752.0454545454546
+    ]
+  },
+  {
+    "version": "strongLate16cap",
+    "n": 20,
+    "games": 20,
+    "earlyLeaderWins": 7,
+    "bombWindows": 64,
+    "leaderChangedWithinWindow": 5,
+    "meanBombDamage": 2828.15625,
+    "maxBombDamage": 6336,
+    "maxImmediateBombEliminations": 1,
+    "finishSeconds": [
+      87.95454545454547,
+      270.90909090909093
+    ]
+  },
+  {
+    "version": "strongLate16cap",
+    "n": 500,
+    "games": 6,
+    "earlyLeaderWins": 1,
+    "bombWindows": 81,
+    "leaderChangedWithinWindow": 13,
+    "meanBombDamage": 3332.8271604938273,
+    "maxBombDamage": 7001,
+    "maxImmediateBombEliminations": 4,
+    "finishSeconds": [
+      355.00000000000006,
+      637.5
+    ]
+  }
+]

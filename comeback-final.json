@@ -1,0 +1,32 @@
+[
+  {
+    "version": "v1.2-final",
+    "n": 20,
+    "games": 20,
+    "earlyLeaderWins": 7,
+    "bombWindows": 53,
+    "leaderChangedWithinWindow": 6,
+    "meanBombDamage": 1930.9433962264152,
+    "maxBombDamage": 5661,
+    "maxImmediateBombEliminations": 1,
+    "finishSeconds": [
+      83.63636363636364,
+      127.5
+    ]
+  },
+  {
+    "version": "v1.2-final",
+    "n": 500,
+    "games": 6,
+    "earlyLeaderWins": 0,
+    "bombWindows": 91,
+    "leaderChangedWithinWindow": 12,
+    "meanBombDamage": 2884.1428571428573,
+    "maxBombDamage": 5416,
+    "maxImmediateBombEliminations": 3,
+    "finishSeconds": [
+      389.31818181818187,
+      752.0454545454546
+    ]
+  }
+]

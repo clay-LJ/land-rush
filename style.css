@@ -73,3 +73,12 @@ footer{margin-top:10px;font-size:9px}
 .results .sectiontitle,.results .ranknote{flex-shrink:0}
 @media(min-width:1101px){.results{height:calc(100dvh - 105px)}}
 @media(max-width:1100px){.results{height:650px}.results #leaders{max-height:150px}}
+
+/* Equal-sized side panels, with setup space dedicated to the input list. */
+@media(min-width:1101px){.layout{grid-template-columns:260px minmax(0,1fr) 260px}.setup,.results{height:calc(100dvh - 105px);max-height:none;min-height:560px}.setup{display:flex;flex-direction:column;overflow:auto}.setup .sectiontitle,.setup .entryhead,.setup .samples,.setup .setting,.setup .hint,.setup>button,.setup #error{flex-shrink:0}.setup textarea{flex:1;min-height:180px;height:auto}.setup #error:empty{display:none}}
+.results .ranking{display:flex;flex-direction:column;min-height:0}.results .ranking:before{content:"";flex:1 0 auto}.ranking .rankrow{flex-shrink:0}.ranking .empty{margin:16px 0}.roster-info{min-width:0}.roster-name{overflow-wrap:anywhere}.rankstate{font-size:9px;color:var(--dim);margin-top:2px}
+#rulesDialog{width:min(640px,calc(100vw - 28px));max-height:calc(100dvh - 40px);padding:0;border:1px solid #4b5665;border-radius:14px;background:#191e25;color:#edf2f8;box-shadow:0 20px 70px #0009}
+#rulesDialog::backdrop{background:#050a13b8;backdrop-filter:blur(3px)}
+.rules-heading{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 20px;background:#191e25;border-bottom:1px solid var(--line)}
+.rules-heading h2{font-size:18px}.rules-content{padding:0 20px 20px;font-size:13px;line-height:1.75}.rules-content h3{margin:20px 0 7px;font-size:14px;color:var(--lime)}.rules-content p,.rules-content .hint{font-size:13px;color:#c3ccd8}.rules-heading button{min-height:42px}
+@media(max-width:650px){#rulesDialog{max-height:calc(100dvh - 24px)}.rules-heading{padding:12px 15px}.rules-content{padding:0 15px 15px}.setup textarea{height:190px}.results{height:650px}}

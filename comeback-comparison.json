@@ -1,0 +1,62 @@
+[
+  {
+    "version": "v1.1",
+    "n": 20,
+    "games": 10,
+    "earlyLeaderWins": 3,
+    "bombWindows": 27,
+    "leaderChangedWithinWindow": 4,
+    "meanBombDamage": 1452.7407407407406,
+    "maxBombDamage": 3783,
+    "maxImmediateBombEliminations": 1,
+    "finishSeconds": [
+      82.50000000000001,
+      123.63636363636365
+    ]
+  },
+  {
+    "version": "v1.1",
+    "n": 500,
+    "games": 10,
+    "earlyLeaderWins": 2,
+    "bombWindows": 110,
+    "leaderChangedWithinWindow": 9,
+    "meanBombDamage": 2002.8727272727272,
+    "maxBombDamage": 4041,
+    "maxImmediateBombEliminations": 5,
+    "finishSeconds": [
+      321.3636363636364,
+      518.1818181818181
+    ]
+  },
+  {
+    "version": "v1.2",
+    "n": 20,
+    "games": 10,
+    "earlyLeaderWins": 4,
+    "bombWindows": 28,
+    "leaderChangedWithinWindow": 3,
+    "meanBombDamage": 1751.142857142857,
+    "maxBombDamage": 4225,
+    "maxImmediateBombEliminations": 0,
+    "finishSeconds": [
+      83.63636363636364,
+      120.45454545454545
+    ]
+  },
+  {
+    "version": "v1.2",
+    "n": 500,
+    "games": 10,
+    "earlyLeaderWins": 1,
+    "bombWindows": 136,
+    "leaderChangedWithinWindow": 12,
+    "meanBombDamage": 3088.4338235294117,
+    "maxBombDamage": 5508,
+    "maxImmediateBombEliminations": 4,
+    "finishSeconds": [
+      395,
+      790.6818181818182
+    ]
+  }
+]

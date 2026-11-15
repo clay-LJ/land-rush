@@ -17,10 +17,16 @@ document.querySelectorAll('[data-speed]').forEach(b=>{b.classList.toggle('select
 function isExpanded(){return !!document.fullscreenElement||$('arena').classList.contains('is-expanded');}
 function syncExpand(){const full=isExpanded();$('fullscreenInside').textContent=full?'↙ 원래 화면 (Esc)':'⛶ 확대';$('fullscreen').textContent=full?'↙ 원래 화면':'⛶ 경기장 확대';render();}
 async function toggleFullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else if($('arena').classList.contains('is-expanded')){$('arena').classList.remove('is-expanded');document.body.style.overflow='';}else if($('arena').requestFullscreen){try{await $('arena').requestFullscreen();}catch(e){$('arena').classList.add('is-expanded');document.body.style.overflow='hidden';}}else{$('arena').classList.add('is-expanded');document.body.style.overflow='hidden';}syncExpand();}catch(e){$('error').textContent='화면 전환을 완료하지 못했습니다.';}}
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&isExpanded())toggleFullscreen();});$('fullscreen').onclick=toggleFullscreen;$('fullscreenInside').onclick=toggleFullscreen;document.addEventListener('fullscreenchange',syncExpand);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('rulesDialog').open&&isExpanded())toggleFullscreen();});$('fullscreen').onclick=toggleFullscreen;$('fullscreenInside').onclick=toggleFullscreen;document.addEventListener('fullscreenchange',syncExpand);
+
+let rulesResume=false,rulesPreviousOverflow='';
+$('rulesOpen').onclick=()=>{rulesResume=running;if(running){running=false;sound.stopAll();$('pause').textContent='▶ 계속하기';}rulesPreviousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';$('rulesDialog').showModal();};
+$('rulesClose').onclick=()=>$('rulesDialog').close();
+$('rulesDialog').addEventListener('close',()=>{document.body.style.overflow=rulesPreviousOverflow;if(rulesResume&&game&&!game.done){running=true;$('pause').textContent='Ⅱ 일시정지';}rulesResume=false;$('rulesOpen').focus({preventScroll:true});});
+$('rulesDialog').addEventListener('keydown',e=>{if(e.key==='Escape')e.stopPropagation();});
 
 function beginTie(){
- tieRace={ids:[...game.pending],progress:new Map(game.pending.map(id=>[id,0])),finished:[],elapsed:0,rows:new Map(),announced:-1};
+ tieRace={ids:[...game.pending],progress:new Map(game.pending.map(id=>[id,0])),finished:[],elapsed:0,rows:new Map(),motion:new Map(game.pending.map(id=>[id,{pace:8+game.rng()*24,factor:.2+game.rng()*2.2,remaining:.35}])),announced:-1};
  tieReturnFocus=document.activeElement;$('tie').hidden=false;$('racers').replaceChildren();
  for(const id of tieRace.ids){const row=node('div','racetrack'),label=node('div','racer-label'),name=node('span','',game.players[id].name),value=node('span','','0%'),track=node('div','track'),fill=node('div','fill');track.setAttribute('aria-hidden','true');label.append(name,value);fill.style.width='0%';fill.style.background=color(id);track.append(fill);row.append(label,track);$('racers').append(row);tieRace.rows.set(id,{fill,value});}
  updateTiePopup();$('tie').querySelector('[role="dialog"]').focus({preventScroll:true});
@@ -35,7 +41,7 @@ function updateTiePopup(){
 $('tiePause').onclick=()=>{$('pause').onclick();updateTiePopup();};
 function advanceTie(dt){
  const r=tieRace;r.elapsed+=dt;const done=new Set(r.finished),arrivals=[];
- for(const id of r.ids){if(done.has(id))continue;const before=r.progress.get(id),distance=(10+game.rng()*32)*dt,after=before+distance;r.progress.set(id,Math.min(100,after));if(after>=100)arrivals.push({id,crossing:(100-before)/distance,tie:game.rng()});}
+ for(const id of r.ids){if(done.has(id))continue;const before=r.progress.get(id),motion=r.motion.get(id);motion.remaining-=dt;if(motion.remaining<=0){motion.factor=.2+game.rng()*2.2;motion.remaining+=.35;}const distance=motion.pace*motion.factor*dt,after=before+distance;r.progress.set(id,Math.min(100,after));if(after>=100)arrivals.push({id,crossing:(100-before)/distance,tie:game.rng()});}
  // Fractional crossing time removes input-order advantage within a rendered frame.
  arrivals.sort((a,b)=>a.crossing-b.crossing||a.tie-b.tie);for(const a of arrivals)r.finished.push(a.id);
  if(r.elapsed>8){const finished=new Set(r.finished);r.ids.filter(id=>!finished.has(id)).map(id=>({id,progress:r.progress.get(id),tie:game.rng()})).sort((a,b)=>b.progress-a.progress||a.tie-b.tie).forEach(p=>r.finished.push(p.id));}
@@ -58,14 +64,14 @@ if(game.lastBomb&&game.time-game.lastBomb.at<.45){let flash=game.lastBomb;ctx.st
 }
 function node(tag,cls,text){let el=document.createElement(tag);el.className=cls||'';if(text!==undefined)el.textContent=text;return el;}
 function updateUI(){if(!game)return;$('clock').textContent=`${String(Math.floor(game.time/.22/60)).padStart(2,'0')}:${String(Math.floor(game.time/.22%60)).padStart(2,'0')}`;$('status').textContent=arrangementDirty?'배치 필요':game.done?'FINISHED':running?(tieRace?'TIE BREAK':'LIVE'):$('start').disabled?'PAUSED':'READY';$('alive').textContent=`${game.alive} / ${game.players.length}명 생존`;$('leaders').replaceChildren();getStandings(game.players).top.forEach(p=>{let d=node('div','leader'),line=node('div','leaderline');const r=getStandings(game.players).byId.get(p.id),badge=node('span','rankbadge',r.label);badge.style.color=medal(r.rank);line.append(badge,node('span','leadername',`#${p.id+1} ${p.name}`),node('span','',p.count+'칸'));line.style.borderLeft='4px solid '+color(p.id);line.style.paddingLeft='7px';d.title='클릭하여 지도에서 추적';d.tabIndex=0;d.setAttribute('role','button');d.setAttribute('aria-label',p.name+' 추적');d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click();}};d.onclick=()=>{focus=p.id;$('focus').value=focus;render();};let t=node('div','track'),f=node('div','fill');f.style.background=color(p.id);f.style.width=p.count/game.grid.length*100+'%';t.append(f);d.append(line,t);$('leaders').append(d);});updateRoster();if(tieRace)updateTiePopup();updateDrama();if(game.done){running=false;$('pause').disabled=true;$('export').disabled=false;$('winner').hidden=false;const winnerName=game.players.find(p=>p.rank===1)?.name||'경기 종료';if($('winner').dataset.winner!==winnerName){$('winner').dataset.winner=winnerName;$('winner').replaceChildren(node('span','','LAST ONE STANDING'),node('b','',winnerName),node('p','','최종 순위가 완성되었습니다.'));startCelebration();}}}
-function rosterOrder(players,done){if(done)return players.slice().sort((a,b)=>a.rank-b.rank);return players.slice().sort((a,b)=>{const aa=a.rank===null,bb=b.rank===null;return aa!==bb?(aa?-1:1):aa?(b.count-a.count||a.id-b.id):(a.rank-b.rank);});}
+function rosterOrder(players,done){return players.filter(p=>p.rank!==null).sort((a,b)=>a.rank-b.rank);}
 function updateRoster(){
  const now=performance.now(),changed=rosterGame!==game||rosterDone!==game.done;if(!changed&&now-lastRosterAt<350)return;lastRosterAt=now;rosterDone=game.done;
  if(rosterGame!==game){rosterGame=game;rosterCache.clear();}
  const standing=getStandings(game.players),rows=[];
  for(const p of rosterOrder(game.players,game.done)){let parts=rosterCache.get(p.id);if(!parts){const row=node('div','rankrow'),badge=node('b'),info=node('span','roster-info'),name=node('span','roster-name'),state=node('small','rankstate');info.append(name,state);row.append(badge,info);row.style.borderLeft='3px solid '+color(p.id);row.style.paddingLeft='7px';parts={row,badge,name,state};rosterCache.set(p.id,parts);}
  const live=p.rank===null,pending=live&&p.count===0;parts.badge.textContent=pending?'결정 중':live?(standing.byId.get(p.id)?.label||'생존'):p.rank+'위';parts.name.textContent=`#${p.id+1} ${p.name}`;parts.state.textContent=pending?'동시 탈락 · 최종 순위 결정 중':live?`생존 · ${p.count}칸`:p.rank===1?'우승 · 최종 1위':`탈락 · 최종 ${p.rank}위`;parts.row.dataset.state=pending?'pending':live?'alive':'finished';rows.push(parts.row);}
- $('ranking').replaceChildren(...rows);
+ if(!rows.length)rows.push(node('p','empty','아직 탈락한 참가자가 없습니다.'));$('ranking').replaceChildren(...rows);
 }
 $('export').onclick=()=>{const safe=s=>'"'+String(s).replaceAll('"','""').replace(/^[=+@-]/,"'$&")+'"';let rows=['순위,이름,시작 땅',...game.players.slice().sort((a,b)=>a.rank-b.rank).map(p=>`${p.rank},${safe(p.name)},${p.weight}`)];let url=URL.createObjectURL(new Blob(['\ufeff'+rows.join('\n')],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='land-rush-ranking.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 function frame(now){let dt=Math.min((now-last)/1000,.1);last=now;if(running&&game&&!game.done){if(tieRace)advanceTie(dt);else{acc+=dt*speed*.22;let budget=performance.now()+18;while(acc>=.05&&performance.now()<budget){game.tick(.05);observeBombSounds();commentator.sample(game,focus,performance.now());acc-=.05;if(game.pending.length){beginTie();break;}if(game.done)break;}acc=Math.min(acc,1);}}if(now-lastUI>80){render();updateUI();lastUI=now;}drawCelebration(now);requestAnimationFrame(frame);}preview();requestAnimationFrame(frame);
